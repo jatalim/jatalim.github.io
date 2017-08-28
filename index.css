@@ -1,56 +1,130 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 body {
-	font-family: "Arial"; 
-    font-size: 14px; 
-    color: #333333; 
-    padding: 0;
-    line-height: 1.42857143;
+  font-family: "Open Sans";
+  background-color: #F8F8F8;
 }
 
-div.header {
-    background-color: #7AB2C2;
-    height: 80px;
-    margin: -20px -8px -8px -8px;
-    padding-top: 10px;
-    padding-left: 10px;
+.text {
+  font-size: 10px;
 }
 
-div.allcontent {
-	position: relative;
-	margin: -20px -8px -8px -8px;
+/* xs < 768 */
+@media screen and (max-width: 767px) { 
+    h1{font-size: 2.0em;} 
+  }
+
+@media screen and (max-width: 767px) { 
+    text {font-size: 0.8em;} 
 }
 
-div.sidebar {
-	position: absolute;
-	left: 0;
-	width: 300px; 
-	height: 100%;
-	background-color: lightgrey;
-	padding-top: 30px;
-	padding-left: 30px; 
+
+/* sm */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 0.6em;
+    }
 }
 
-div.maincontent {
-    position: relative;
-    margin-left: 350px;
+/* md */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
 }
 
-div.text {
-  padding: 0 150px 0 0px;
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+}
+.jumbotron {  
+ background-image: url("jumbopic.jpg");
+ background-size: cover;
+background-position: center center;
+margin-top: -30px;
+margin-left: -120px;
+margin-right: -120px;
+margin-bottom: -30px;
+height: 750px;
 }
 
-div.text2 {
-	padding: 0 0 10px 0;
+.row {
+  margin: 40px auto;
+  text-align: center;
 }
+
+.buttons {
+  margin-left: 100px;
+  display: inline-block;
+  text-align: center center; 
+}
+
+  .btn-linkedin {
+    background: #0E76A8;
+    border-radius: 0;
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #084461;
+  }
+
+  .btn-linkedin:link, .btn-linkedin:visited {
+    color: #fff;
+  }
+  .btn-linkedin:active, .btn-linkedin:hover {
+    background: #084461;
+    color: #fff;
+  }
+
+.btn-medium:link, .btn-medium:visited {
+  color: #333333;
+}
+
+.btn-medium:active, .btn-medium:hover {
+    background: white;
+    color: grey;
+  }
+
+.btn-medium {
+    background: white;
+    border-radius: 0;
+    color: grey;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #333333;
+  }
+
+@import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One);
+
+.instagram {
+  font-family: "Alfa Slab One", cursive; 
+  display: inline;
+}
+
+.btn-instagram:link, .btn-instagram:visited {
+background: #f09433; 
+background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 )
+}
+
+.btn-instagram:active, .btn-instagram:hover {
+    background: #CA307C;
+    color: black;
+  }
+
+.btn-instagram {
+    background: white
+    border-radius: 0;
+    color: #262626;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #CA307C;
+  }
+
 img {
-	height:300px; width: 300px
-}
-
-div.footer {
-height: 40px; 
-position: relative;
-clear: both;
-background-color: pink;
-margin: -15px -8px -15px -10px;
-padding-top: 10px;
-	padding-left: 30px; 
+  height:100px; width: 100px; 
 }
