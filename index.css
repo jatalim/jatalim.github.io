@@ -3,11 +3,14 @@
 body {
   font-family: "Open Sans";
   background-color: #F8F8F8;
+
 }
 
-.text {
-  font-size: 10px;
+body, html {
+  height: 100%;
 }
+
+.text {padding:100px;}
 
 /* xs < 768 */
 @media screen and (max-width: 767px) { 
@@ -39,20 +42,25 @@ body {
         font-size: 1.3em;
     }
 }
+
+.nav {
+  margin: 0;
+  padding: 0;
+}
+
+
 .jumbotron {  
- background-image: url("jumbopic.jpg");
- background-size: cover;
-background-position: center center;
-margin-top: -30px;
-margin-left: -120px;
-margin-right: -120px;
-margin-bottom: -30px;
-height: 750px;
+background: url("jumbopic.jpg") center center no-repeat;
+background-size: cover;
+height: 100%;
+margin: -50px;
+padding: 20px;
 }
 
 .row {
   margin: 40px auto;
   text-align: center;
+  width: 100%;
 }
 
 .buttons {
