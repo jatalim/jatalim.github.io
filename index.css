@@ -1,99 +1,78 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
-
 body {
-  font-family: "Open Sans";
-  background-color: #F8F8F8;
-
+    font-family: "Open Sans";
+    background-color: #F8F8F8;
 }
 
-body, html {
-  height: 100%;
+body,
+html {
+    height: 100%;
 }
 
-.text {padding:100px;}
-
-/* xs < 768 */
-@media screen and (max-width: 767px) { 
-    h1{font-size: 2.0em;} 
-  }
-
-@media screen and (max-width: 767px) { 
-    text {font-size: 0.8em;} 
+.navbar {
+    padding: 0;
+    margin: 0;
 }
 
-
-/* sm */
-@media screen and (min-width: 768px) {
-    body {
-        font-size: 0.6em;
-    }
-}
-
-/* md */
-@media screen and (min-width: 992px) {
-    body {
-        font-size: 1.2em;
-    }
-}
-
-/* lg */
-@media screen and (min-width: 1200px) {
-    body {
-        font-size: 1.3em;
-    }
-}
-
-.nav {
-  margin: 0;
-  padding: 0;
-}
-
-
-.jumbotron {  
-background: url("jumbo.jpg") center center no-repeat;
-background-size: cover;
-height: 100%;
-margin: -50px;
-padding: 20px;
-}
-
-.row {
-  margin: 40px auto;
-  text-align: center;
-  width: 100%;
+.headcover {
+    background: url("jumbo.jpg") center center no-repeat;
+    background-size: cover;
+    
+    height: 100%;
+    text-align: center;
+    margin: 0;
+/*    padding: 0;*/
+    margin-top: -52px;
+    padding-top: 80px;
 }
 
 .buttons {
-  margin-left: 100px;
-  display: inline-block;
-  text-align: center center; 
+    position: absolute;
+    bottom: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
 }
 
-  .btn-linkedin {
+.opaque {
+    
+}
+
+.jumbowords h1 {
+    font-size: 50px;
+}
+
+.btn-linkedin {
     background: #0E76A8;
     border-radius: 0;
     color: #fff;
     border-width: 1px;
     border-style: solid;
     border-color: #084461;
-  }
-
-  .btn-linkedin:link, .btn-linkedin:visited {
-    color: #fff;
-  }
-  .btn-linkedin:active, .btn-linkedin:hover {
-    background: #084461;
-    color: #fff;
-  }
-
-.btn-medium:link, .btn-medium:visited {
-  color: #333333;
 }
 
-.btn-medium:active, .btn-medium:hover {
+.btn-linkedin:link,
+.btn-linkedin:visited {
+    color: #fff;
+}
+
+.btn-linkedin:active,
+.btn-linkedin:hover {
+    background: #084461;
+    color: #fff;
+}
+
+.btn-medium:link,
+.btn-medium:visited {
+    color: #333333;
+}
+
+.btn-medium:active,
+.btn-medium:hover {
     background: white;
     color: grey;
-  }
+}
 
 .btn-medium {
     background: white;
@@ -102,34 +81,33 @@ padding: 20px;
     border-width: 1px;
     border-style: solid;
     border-color: #333333;
-  }
+}
 
 @import url(https://fonts.googleapis.com/css?family=Alfa+Slab+One);
-
 .instagram {
-  font-family: "Alfa Slab One", cursive; 
-  display: inline;
+    font-family: "Alfa Slab One", cursive;
+    display: inline;
 }
 
-.btn-instagram:link, .btn-instagram:visited {
-background: #f09433; 
-background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 )
+.btn-instagram:link,
+.btn-instagram:visited {
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888', GradientType=1)
 }
 
-.btn-instagram:active, .btn-instagram:hover {
+.btn-instagram:active,
+.btn-instagram:hover {
     background: #CA307C;
     color: black;
-  }
+}
 
 .btn-instagram {
-    background: white
-    border-radius: 0;
+    background: white border-radius: 0;
     color: #262626;
     border-width: 1px;
     border-style: solid;
     border-color: #CA307C;
-  }
-
+}
